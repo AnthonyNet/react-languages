@@ -32,7 +32,7 @@ const Home = () => {
       <div className="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
         <div className="col p-4 d-flex flex-column position-static">
           <strong className="d-inline-block mb-2 text-success">Deutsch</strong>
-          <h3 className="mb-0">Post title</h3>
+          <h3 className="mb-0">Unregelmäßige verben</h3>
           <div className="mb-1 text-success">Exam</div>
           <p className="mb-auto">Hier ist eine prüfung deiner Fähigkeiten</p>
           <a href="#" className="stretched-link">Continue</a>
