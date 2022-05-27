@@ -13,7 +13,7 @@ const CarouselX = () => {
   //Function checks values in inputs and change styles
 
   const handleChange = (e) => {
-    console.log(e);
+  
     
     const value = e.target.value;
 
