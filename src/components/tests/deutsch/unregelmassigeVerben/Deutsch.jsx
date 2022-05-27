@@ -20,19 +20,34 @@ const CarouselX = () => {
     input5: "",
   });
 
+  const [stylesInput, useStylesInput] = useState({
+    color: "gray",
+    fontWeight: "normal",
+    readOnly: false
+  });
+
+  const [stylesLi, useStylesLi] = useState({
+   backgroundColor: "transparent"
+  });
+
+
+
   const handleChange = (e) => {
+  
     const name = e.target.name;
     const value = e.target.value;
     setInputs({
       ...inputs,
       [name]: value,
     });
+   
     const data = e.target.attributes.data.value;
-    const inputElement = e.nativeEvent.explicitOriginalTarget;
+    const inputElement = e.target;
+    
     if (value == "") {
       inputElement.style.color = "gray";
     } else if (data === value) {
-      inputElement.parentElement.style.backgroundColor = "green";
+      e.target.parentElement.style.backgroundColor = "green";
       e.target.readOnly = true;
       setTotalScore((count) => count + 1);
       setScore((count) => count + 1);
@@ -142,13 +157,14 @@ const CarouselX = () => {
             <ListGroup.Item>
               <strong>{Data[rand].cz}</strong>
             </ListGroup.Item>
-            <ListGroup.Item>
+            <ListGroup.Item style={stylesLi}>
               <input
                 name="input1"
                 value={inputs.input1}
                 onChange={handleChange}
                 data={Data[rand].infinitive}
                 placeholder="Infinitiv"
+                style={stylesInput}
               ></input>
             </ListGroup.Item>
             <ListGroup.Item>

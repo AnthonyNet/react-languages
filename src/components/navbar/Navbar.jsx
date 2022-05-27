@@ -22,20 +22,20 @@ const Navbar = () => {
           <Offcanvas.Title>Menu</Offcanvas.Title>
         </Offcanvas.Header>
         <Offcanvas.Body>
-          <ul class="list-group">
-            <li class="list-group-item" aria_label="Close">
+          <ul className="list-group">
+            <li className="list-group-item" aria_label="Close">
               <Link  to="/"
               style={{ textDecoration: 'none' }}
               >Hlavní stránka</Link>
             </li>
 
-            <li class="list-group-item">
+            <li className="list-group-item">
               <Link  to="/english-Irregular-Verbs"
               style={{ textDecoration: 'none' }}
               >English Irregular Verbs</Link>
             </li>
 
-            <li class="list-group-item">
+            <li className="list-group-item">
               <Link to="/deutsch-Unregelmassige-Verben"
               style={{ textDecoration: 'none' }}
               >
