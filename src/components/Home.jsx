@@ -44,8 +44,21 @@ const Home = () => {
       </div>
     </div>
   </div>
+- 
+ 
 
-  <div className="row g-5">
+
+  
+
+    </div>
+  )
+}
+
+export default Home
+
+
+/*
+ <div className="row g-5">
     <div className="col-md-8">
       <h3 className="pb-4 mb-4 fst-italic border-bottom">
         Click on the top menu to see more
@@ -129,12 +142,4 @@ const Home = () => {
       </div>
     </div>
   </div>
-
-
-  
-
-    </div>
-  )
-}
-
-export default Home
+*/
