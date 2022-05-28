@@ -36,16 +36,14 @@ const Quiz1 = () => {
      You scored {score} out of {data.length}</Card.Body></Card>
     :(
       <Card className="position-absolute top-50 start-50 w-auto translate-middle cardQuiz">
-        <Button variant="primary">
-          Next Card
-        </Button>
+       
         <Card.Body>
-          <ListGroup className="quizLi">
-            <ListGroup.Item><span>Question {currentQuestion + 1}</span>/{data.length}</ListGroup.Item>
+          <ListGroup>
+            <ListGroup.Item className="bg-primary" ><strong><span>Question {currentQuestion + 1}</span>/{data.length}</strong></ListGroup.Item>
             <ListGroupItem>{data[currentQuestion].questionText}</ListGroupItem>
             <ListGroupItem>
             {data[currentQuestion].answerOptions.map((answerOption, index) =>(
-            <ListGroupItem key={index} onClick={()=> handleButton(answerOption.isCorrect)}>{answerOption.answerText}</ListGroupItem>
+            <ListGroupItem key={index} className="quizLi" onClick={()=> handleButton(answerOption.isCorrect)}>{answerOption.answerText}</ListGroupItem>
     ))}
             </ListGroupItem>
         </ListGroup>

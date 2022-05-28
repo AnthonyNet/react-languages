@@ -13,7 +13,7 @@ const Navbar = () => {
 
   return (
     <nav>
-      <Button variant="primary" onClick={handleShow}>
+      <Button className="mt-3" variant="primary" onClick={handleShow}>
         Menu
       </Button>
 
