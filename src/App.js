@@ -4,6 +4,7 @@ import {Routes, Route} from 'react-router-dom';
 import Home from './components/Home'
 import English from './components/tests/english/irregularVerbs/English'
 import Deutsch from './components/tests/deutsch/unregelmassigeVerben/Deutsch'
+import Quiz1 from './components/tests/english/quiz1/Quiz1'
 
 
 import './App.css'
@@ -18,7 +19,7 @@ function App() {
         <Route path="/" element={<Home/>} />
         <Route path="/english-Irregular-Verbs" element={<English/>} />
         <Route path="/deutsch-Unregelmassige-Verben" element={<Deutsch/>} />
-       
+        <Route path="/quiz1" element={<Quiz1/>} />
       </Routes>
     </div>
   );

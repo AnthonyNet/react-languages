@@ -5,15 +5,12 @@ export default [
               "infinitive":"backen",
               "pastTense":"backte",
               "pastTense2":"buk",
-              "presentPerfect":"gebacken",
-              "presentPerfect2":"gebacken"
+              "presentPerfect":"gebacken"
            },
            {
               "cz":"přikázat",
               "infinitive":"befehlen",
               "pastTense":"befahl",
-              "pastTense2":"befahl",
-              "presentPerfect":"befohlen",
               "presentPerfect2":"befohlen"
            },
            {

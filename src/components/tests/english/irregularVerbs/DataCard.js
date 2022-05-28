@@ -2,10 +2,7 @@
     export default [{  "cz"   : "vzniknout",  
         "base" : "arise", 		
         "pastSimple" :	"arose",
-        "pastSimple2" :	"arose",
-        "pastParticiple" : "arisen",
-        "pastParticiple2" :	"arisen",
-    
+        "pastParticiple" : "arisen"
     },
     {   "cz"   : "probudit", 
         "base" : "awake", 		

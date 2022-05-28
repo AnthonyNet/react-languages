@@ -110,7 +110,9 @@ const CarouselX = () => {
         </Button>
         <Card.Body>
           <ListGroup>
-            <ListGroup.Item className="icons">{runMe(score)}</ListGroup.Item>
+            <ListGroup.Item className="icons">{runMe(score)}
+            
+            </ListGroup.Item>
 
             <ListGroup.Item className="d-flex flex-row justify-content-between">
               <div>
