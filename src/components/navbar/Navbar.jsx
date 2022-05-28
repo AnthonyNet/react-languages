@@ -105,7 +105,7 @@ const Navbar = () => {
                     }}
                   >
                     <Link
-                      to="/english-Irregular-Verbs"
+                      to="/deutsch-Unregelmassige-Verben"
                       style={{ textDecoration: "none" }}
                     >
                       Unregelmäßige Verben
@@ -118,7 +118,7 @@ const Navbar = () => {
                     }}
                   >
                     <Link
-                      to="/english-Irregular-Verbs"
+                      to="/"
                       style={{ textDecoration: "none" }}
                     >
                       Fake Item
@@ -131,7 +131,7 @@ const Navbar = () => {
                     }}
                   >
                     <Link
-                      to="/english-Irregular-Verbs"
+                      to="/"
                       style={{ textDecoration: "none" }}
                     >
                       Fake Item
