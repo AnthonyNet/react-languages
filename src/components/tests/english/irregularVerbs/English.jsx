@@ -109,7 +109,7 @@ const CarouselX = () => {
 
   return (
     <div>
-      <Card className="position-absolute top-50 start-50 translate-middle">
+      <Card className="position-absolute top-50 start-50 cardQuiz translate-middle">
         <Button onClick={randomWord} variant="primary">
           Next Card
         </Button>

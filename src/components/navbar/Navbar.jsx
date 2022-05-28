@@ -59,36 +59,6 @@ const Navbar = () => {
                       Quiz 1
                     </Link>
                   </li>
-                  <li
-                    className="list-group-item"
-                    onClick={() => {
-                      setShow(false);
-                    }}
-                  >
-                    <Link to="/" style={{ textDecoration: "none" }}>
-                      Fake Item
-                    </Link>
-                  </li>
-                  <li
-                    className="list-group-item"
-                    onClick={() => {
-                      setShow(false);
-                    }}
-                  >
-                    <Link to="/" style={{ textDecoration: "none" }}>
-                      Fake Item
-                    </Link>
-                  </li>
-                  <li
-                    className="list-group-item"
-                    onClick={() => {
-                      setShow(false);
-                    }}
-                  >
-                    <Link to="/" style={{ textDecoration: "none" }}>
-                      Fake Item
-                    </Link>
-                  </li>
                 </ul>
 
                 <summary>English exercise</summary>
@@ -109,32 +79,6 @@ const Navbar = () => {
                       style={{ textDecoration: "none" }}
                     >
                       Unregelmäßige Verben
-                    </Link>
-                  </li>
-                  <li
-                    className="list-group-item"
-                    onClick={() => {
-                      setShow(false);
-                    }}
-                  >
-                    <Link
-                      to="/"
-                      style={{ textDecoration: "none" }}
-                    >
-                      Fake Item
-                    </Link>
-                  </li>
-                  <li
-                    className="list-group-item"
-                    onClick={() => {
-                      setShow(false);
-                    }}
-                  >
-                    <Link
-                      to="/"
-                      style={{ textDecoration: "none" }}
-                    >
-                      Fake Item
                     </Link>
                   </li>
                 </ul>

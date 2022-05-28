@@ -58,10 +58,15 @@ summary{
 
 @media only screen and (max-width: 440px) {
   .cardQuiz{
-    min-width: 95vw!important;
+    width: 95vw!important;
   }
+ 
   .list-group-item{
   font-size: 3.7vw;
+  }
+
+  .list-group-item input{
+    max-width: 60vw!important;
   }
 }
 
