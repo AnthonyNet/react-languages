@@ -10,6 +10,7 @@ import Data from "./DataCard";
 const CarouselX = () => {
   const [totalScore, setTotalScore] = useState(0);
   const [score, setScore] = useState(0);
+ 
   //Function checks values in inputs and change styles
 
   const handleChange = (e) => {
@@ -41,13 +42,17 @@ const CarouselX = () => {
     setRand(Math.floor(Math.random() * Data.length));
 
     const inputs = document.querySelectorAll(".list-group-item input");
+  
     inputs.forEach((input) => {
       input.parentElement.style.backgroundColor = "transparent";
       input.style.color = "gray";
       input.style.fontWeight = "normal";
       input.readOnly = false;
+      input.value=""
+      
     });
     setScore(0);
+  
   }
 
   const runMe = (score) => {
