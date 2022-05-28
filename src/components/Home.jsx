@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
@@ -20,7 +21,11 @@ const Home = () => {
           <h3 className="mb-0">Irregular verbs</h3>
           <div className="mb-1 text-primary">Exam</div>
           <p className="card-text mb-auto">Test your knowledge of irregular verbs</p>
-          <a href="#" className="stretched-link">Continue</a>
+          <Link 
+          to="/english-Irregular-Verbs"
+          className="stretched-link"
+           />
+         <p className='text-primary'>Continue</p>
         </div>
         <div className="col-auto d-none d-lg-block">
         <img className='bd-placeholder-img' src="https://freesvgdesigns.com/wp-content/uploads/2022/05/02177-Life-Is-Better-Around-A-Campfire-Quote-500x500.png" alt="" width="200" height="250"/>
@@ -35,7 +40,11 @@ const Home = () => {
           <h3 className="mb-0">Unregelmäßige verben</h3>
           <div className="mb-1 text-success">Exam</div>
           <p className="mb-auto">Hier ist eine prüfung deiner Fähigkeiten</p>
-          <a href="#" className="stretched-link">Continue</a>
+          <Link 
+          to="/deutsch-Unregelmassige-Verben"
+          className="stretched-link"
+           />
+         <p className='text-primary'>Continue</p>
         </div>
         <div className="col-auto d-none d-lg-block">
         <img className='bd-placeholder-img' src="https://freesvgdesigns.com/wp-content/uploads/2022/05/02177-Life-Is-Better-Around-A-Campfire-Quote-500x500.png" alt="" width="200" height="250"/>

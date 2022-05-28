@@ -50,5 +50,18 @@ summary{
   font-weight: 700;
 }
 
+@media only screen and (max-width: 700px) {
+  .cardQuiz{
+    min-width: 80vw!important;
+  }
+}
 
+@media only screen and (max-width: 440px) {
+  .cardQuiz{
+    min-width: 95vw!important;
+  }
+  .list-group-item{
+  font-size: 3.7vw;
+  }
+}
 

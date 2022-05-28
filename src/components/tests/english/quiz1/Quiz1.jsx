@@ -32,10 +32,10 @@ const Quiz1 = () => {
   return (
     <section className="className='container home p-4">
      {showScore ? 
-     <Card className="position-absolute top-50 start-50 w-50 translate-middle"><Card.Body>
+     <Card className="position-absolute top-50 start-50 w-auto translate-middle cardQuiz"><Card.Body>
      You scored {score} out of {data.length}</Card.Body></Card>
     :(
-      <Card className="position-absolute top-50 start-50 w-auto translate-middle">
+      <Card className="position-absolute top-50 start-50 w-auto translate-middle cardQuiz">
         <Button variant="primary">
           Next Card
         </Button>
