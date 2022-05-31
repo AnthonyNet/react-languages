@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { BsFillStarFill } from "react-icons/bs";
 
 import Button from "react-bootstrap/Button";
@@ -7,15 +7,19 @@ import ListGroup from "react-bootstrap/ListGroup";
 
 import Data from "./DataCard";
 
+import getLocalStorage from '../../Functions'
+
 const CarouselX = () => {
-  const [totalScore, setTotalScore] = useState(0);
+  const [totalScore, setTotalScore] = useState(getLocalStorage());
   const [score, setScore] = useState(0);
+
+  useEffect(()=>{
+    localStorage.setItem('totalScore', JSON.stringify(totalScore))
+  }, [totalScore])
  
   //Function checks values in inputs and change styles
 
   const handleChange = (e) => {
-  
-    
     const value = e.target.value;
 
     const data = e.target.attributes.data.value;
@@ -25,7 +29,7 @@ const CarouselX = () => {
     } else if (data === value) {
       inputElement.parentElement.style.backgroundColor = "green";
       e.target.readOnly = true;
-      setTotalScore((count) => count + 1);
+      setTotalScore((count) => +count + 1);
       setScore((count) => count + 1);
     } else if (data.startsWith(value)) {
       inputElement.style.color = "green";
@@ -48,7 +52,7 @@ const CarouselX = () => {
       input.style.color = "gray";
       input.style.fontWeight = "normal";
       input.readOnly = false;
-      input.value=""
+      input.value="";
       
     });
     setScore(0);

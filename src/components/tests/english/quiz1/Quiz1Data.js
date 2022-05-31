@@ -7,6 +7,7 @@ export default [
                 {answerText: 'inflated the tyres of her bike', isCorrect: false},
                 {answerText: 'pruned some shrubs in the garden', isCorrect: true}
             ],
+            num: 4,
         },
         {
             questionText: 'My father works as a carpenter. He ________.',
@@ -16,6 +17,7 @@ export default [
                 {answerText: 'repairs cars', isCorrect: false},
                 {answerText: 'works with wood', isCorrect: true}
             ],
+            num: 4,
         },
         {
             questionText: 'A strong ________ of wind blew the cyclist sideways into the ditch.',
@@ -25,6 +27,7 @@ export default [
                 {answerText: 'lust', isCorrect: false},
                 {answerText: 'rust', isCorrect: false}
             ],
+            num: 1,
         },
         {
             questionText: "You can skip the lettuce in the recipe if you're not a big fan of ________ vegetables.",
@@ -34,6 +37,7 @@ export default [
                 {answerText: 'gaudy', isCorrect: false},
                 {answerText: 'knotty', isCorrect: false}
             ],
+            num: 0
         },
         {
             questionText: "I'm very grateful to my parents for the way they ________ me up.",
@@ -43,6 +47,6 @@ export default [
                 {answerText: 'raised', isCorrect: false},
                 {answerText: 'rose', isCorrect: false}
             ],
-        },
-
+            num: 0
+        }
     ]

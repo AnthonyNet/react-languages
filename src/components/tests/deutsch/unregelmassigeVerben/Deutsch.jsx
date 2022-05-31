@@ -7,28 +7,33 @@ import ListGroup from "react-bootstrap/ListGroup";
 
 import Data from "./DataCard";
 
+import getLocalStorage from '../../Functions'
 
 const CarouselX = () => {
-  const [totalScore, setTotalScore] = useState(0);
+  const [totalScore, setTotalScore] = useState(getLocalStorage());
   const [score, setScore] = useState(0);
 
-  const [inputs, setInputs] = useState({
+  useEffect(()=>{
+    localStorage.setItem('totalScore', JSON.stringify(totalScore))
+  }, [totalScore])
+
+ /* const [inputs, setInputs] = useState({
     input1: "",
     input2: "",
     input3: "",
     input4: "",
     input5: "",
-  });
+  });*/
 
 
   const handleChange = (e) => {
   
     const name = e.target.name;
     const value = e.target.value;
-    setInputs({
+    /*setInputs({
       ...inputs,
       [name]: value,
-    });
+    });*/
    
     const data = e.target.attributes.data.value;
     const inputElement = e.target;
@@ -38,7 +43,7 @@ const CarouselX = () => {
     } else if (data === value) {
       e.target.parentElement.style.backgroundColor = "green";
       e.target.readOnly = true;
-      setTotalScore((count) => count + 1);
+      setTotalScore((count) => +count + 1);
       setScore((count) => count + 1);
     } else if (data.startsWith(value)) {
       inputElement.style.color = "green";
@@ -53,19 +58,20 @@ const CarouselX = () => {
 
   function randomWord(e) {
     setRand(Math.floor(Math.random() * Data.length));
-    setInputs({
+  /*  setInputs({
       input1: "",
       input2: "",
       input3: "",
       input4: "",
       input5: "",
-    });
+    });*/
     const inputs = document.querySelectorAll(".list-group-item input");
     inputs.forEach((input) => {
       input.parentElement.style.backgroundColor = "transparent";
       input.style.color = "gray";
       input.style.fontWeight = "normal";
       input.readOnly = false;
+      input.value="";
     });
     setScore(0);
   }
@@ -149,7 +155,6 @@ const CarouselX = () => {
             <ListGroup.Item>
               <input
                 name="input1"
-                value={inputs.input1}
                 onChange={handleChange}
                 data={Data[rand].infinitive}
                 placeholder="Infinitiv"
@@ -159,7 +164,6 @@ const CarouselX = () => {
             <ListGroup.Item>
               <input
                 name="input2"
-                value={inputs.input2}
                 onChange={handleChange}
                 data={Data[rand].pastTense}
                 placeholder="Past Tense"
@@ -169,7 +173,6 @@ const CarouselX = () => {
               <ListGroup.Item>
                 <input
                   name="input3"
-                  value={inputs.input3}
                   onChange={handleChange}
                   data={Data[rand].pastTense2}
                   placeholder="Past Tense 2"
@@ -180,7 +183,6 @@ const CarouselX = () => {
             <ListGroup.Item>
               <input
                 name="input4"
-                value={inputs.input4}
                 data={Data[rand].presentPerfect}
                 placeholder="Present Perfect"
                 onChange={handleChange}
@@ -190,7 +192,6 @@ const CarouselX = () => {
               <ListGroup.Item>
                 <input
                   name="input5"
-                  value={inputs.input5}
                   onChange={handleChange}
                   data={Data[rand].presentPerfect2}
                   placeholder="Present Perfect 2"

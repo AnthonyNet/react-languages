@@ -12,13 +12,16 @@ import Navbar from './components/navbar/Navbar'
 
 
 function App() {
+
+
+
   return (
     <div className="App">
       <Navbar />
       <Routes>
         <Route path="/" element={<Home/>} />
         <Route path="/english-Irregular-Verbs" element={<English/>} />
-        <Route path="/deutsch-Unregelmassige-Verben" element={<Deutsch/>} />
+        <Route path="/deutsch-Unregelmassige-Verben" element={<Deutsch />} />
         <Route path="/quiz1" element={<Quiz1/>} />
       </Routes>
     </div>
