@@ -28,7 +28,7 @@ const Home = () => {
          <p className='text-primary'>Continue</p>
         </div>
         <div className="col-auto d-none d-lg-block">
-        <img className='bd-placeholder-img' src="https://freesvgdesigns.com/wp-content/uploads/2022/05/02177-Life-Is-Better-Around-A-Campfire-Quote-500x500.png" alt="" width="200" height="250"/>
+        <img className='bd-placeholder-img' src="https://i.pinimg.com/originals/04/8e/77/048e7789a8d936c8c86bde2047f9236c.jpg" alt="" width="200" height="250"/>
 
         </div>
       </div>
@@ -47,7 +47,7 @@ const Home = () => {
          <p className='text-primary'>Continue</p>
         </div>
         <div className="col-auto d-none d-lg-block">
-        <img className='bd-placeholder-img' src="https://freesvgdesigns.com/wp-content/uploads/2022/05/02177-Life-Is-Better-Around-A-Campfire-Quote-500x500.png" alt="" width="200" height="250"/>
+        <img className='bd-placeholder-img' src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Ffreedesignfile.com%2Fupload%2F2015%2F01%2FMagic-universe-space-vector-background-17.jpg&f=1&nofb=1" alt="" width="200" height="250"/>
 
         </div>
       </div>
